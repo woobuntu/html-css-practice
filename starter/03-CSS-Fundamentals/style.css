@@ -1,3 +1,37 @@
 h1 {
-  color: blue;
+  font-size: 26px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  /* h1과 h2의 구분은 semantic한 것이지 h1이 h2보다 반드시 커야 하는 것은 아니다. */
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  /* 부모 엘리먼트를 기준으로 한다. */
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  /* font-size의 1.5배라는 뜻 */
+}
+
+li {
+  font-size: 20px;
+  font-family: sans-serif;
 }
