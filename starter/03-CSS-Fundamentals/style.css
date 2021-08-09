@@ -80,3 +80,17 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
 }
+
+/* pseudo class */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* odd, even등의 키워드도 사용할 수 있다. */
+li:nth-child(odd) {
+  /* color: red; */
+}
