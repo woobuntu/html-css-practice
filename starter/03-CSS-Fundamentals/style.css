@@ -6,7 +6,15 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
 }
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+/* CSS는 위에서부터 아래로 읽어내려가므로 h1, h2, h3의 color를 override */
 
 h1 {
   font-size: 26px;
@@ -61,4 +69,14 @@ li {
 
 .related {
   list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
 }
