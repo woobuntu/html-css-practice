@@ -94,3 +94,26 @@ li:last-child {
 li:nth-child(odd) {
   /* color: red; */
 }
+
+/* href속성이 있는 a 태그에만 적용 */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+/* 커서가 올라갔을 때 */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* 실제로 클릭했을 때 */
+a:active {
+  background-color: black;
+  font-style: italic;
+}
