@@ -101,6 +101,11 @@ a:link {
   text-decoration: none;
 }
 
+/* pseudo class(:link)가 우선순위가 높기 때문에 red는 적용되지 않는다. */
+a {
+  color: red;
+}
+
 a:visited {
   color: #1098ad;
 }
@@ -116,4 +121,20 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
 }
