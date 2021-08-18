@@ -20,6 +20,7 @@ body {
   /* 이렇게 두 개만 선택하면 전자는 top과 bottom에, 후자는 left와 right에 해당 */
 
   margin-bottom: 60px;
+  height: 80px; /* 이 height은 padding, border가 포함되지 않은 값이다. */
 }
 
 nav {
@@ -39,6 +40,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
+  width: 500px;
 }
 
 h1,
@@ -179,4 +181,9 @@ a:active {
 
 footer p {
   color: green;
+}
+
+.post-img {
+  width: 100%; /* 부모 엘리먼트(.post-header)를 기준으로 한다. */
+  height: auto;
 }
