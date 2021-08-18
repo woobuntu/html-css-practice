@@ -1,13 +1,45 @@
 * {
+  margin: 0;
+  padding: 0;
 }
 /* 상속이 아니라 모든 엘리먼트에 적용되는 속성이다. */
 
 body {
   font-family: sans-serif;
   color: #444;
+
+  border-top: 10px solid #1098ad;
 }
 /* 상속되는 속성은 대부분 text에 관한 것이라, border같은 속성은 상속되지 않는다. */
 /* 상속된 속성은 우선순위에서 밀린다. */
+
+/* .main-header나 aside처럼 복수의 엘리먼트를 자식 엘리먼트로 갖는 selector를 보통 위에 둔다. */
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  /* 이렇게 두 개만 선택하면 전자는 top과 bottom에, 후자는 left와 right에 해당 */
+
+  margin-bottom: 60px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+}
 
 h1,
 h2,
@@ -25,10 +57,17 @@ h1 {
 h2 {
   font-size: 40px;
   /* h1과 h2의 구분은 semantic한 것이지 h1이 h2보다 반드시 커야 하는 것은 아니다. */
+
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  /* 이 margin-top은 p의 margin-bottom과 만나게 되는데, */
+  /* 이러한 경우 보통 둘 중 큰 것만 적용된다. */
+  /* 이러한 현상을 collapsing margin이라 한다. */
 }
 
 h4 {
@@ -42,10 +81,23 @@ p {
   font-size: 22px;
   line-height: 1.5;
   /* font-size의 1.5배라는 뜻 */
+
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* footer element 하위의 p 엘리먼트 선택 */
@@ -69,16 +121,6 @@ li {
 
 .related {
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* pseudo class */
