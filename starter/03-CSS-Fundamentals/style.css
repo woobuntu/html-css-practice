@@ -13,6 +13,15 @@ body {
 /* 상속되는 속성은 대부분 text에 관한 것이라, border같은 속성은 상속되지 않는다. */
 /* 상속된 속성은 우선순위에서 밀린다. */
 
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  /* margin-left와 margin-right를 동일하게 맞추는 방법 */
+  /* 와 굳이 flex 쓸 필요가 없군요... */
+}
+
 /* .main-header나 aside처럼 복수의 엘리먼트를 자식 엘리먼트로 갖는 selector를 보통 위에 둔다. */
 .main-header {
   background-color: #f7f7f7;
