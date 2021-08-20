@@ -29,7 +29,6 @@ body {
   /* 이렇게 두 개만 선택하면 전자는 top과 bottom에, 후자는 left와 right에 해당 */
 
   margin-bottom: 60px;
-  height: 80px; /* 이 height은 padding, border가 포함되지 않은 값이다. */
 }
 
 nav {
@@ -134,6 +133,11 @@ li:last-child {
   list-style: none;
 }
 
+/* li {
+  display: inline;
+} */
+/* block-level element를 inline element로 */
+
 /* pseudo class */
 li:first-child {
   font-weight: bold;
@@ -195,4 +199,22 @@ footer p {
 .post-img {
   width: 100%; /* 부모 엘리먼트(.post-header)를 기준으로 한다. */
   height: auto;
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+  /* inline-element를 block-level element로 */
+}
+
+/* psuedo class chaining */
+nav a:link:last-child {
+  margin-right: 0;
 }
