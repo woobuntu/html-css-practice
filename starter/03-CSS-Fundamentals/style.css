@@ -9,6 +9,9 @@ body {
   color: #444;
 
   border-top: 10px solid #1098ad;
+
+  position: relative;
+  /* 자식 element인 button이 기준으로 삼는 position */
 }
 /* 상속되는 속성은 대부분 text에 관한 것이라, border같은 속성은 상속되지 않는다. */
 /* 상속된 속성은 우선순위에서 밀린다. */
@@ -217,4 +220,15 @@ nav a:link {
 /* psuedo class chaining */
 nav a:link:last-child {
   margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  /* 부모 속성에 relative를 걸어주지 않으면 기본적으로 viewport에 맞춰 계산된다. */
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
